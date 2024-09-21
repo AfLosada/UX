@@ -4,10 +4,8 @@ import { useEffect, useState, type ReactNode } from "react";
 export const BasePage = ({ children }: { children: ReactNode }) => {
 	return (
 		<div
-			className="flex flex-col justify-start h-full"
-			style={{ paddingTop: "10%" }}
+			className="overflow-hidden flex flex-col justify-start h-full w-full pr-40 pl-40 pt-20 pb-5"
 		>
-			<p className="text-5xl">Administracion de Alarmas</p>
 			{children}
 		</div>
 	);

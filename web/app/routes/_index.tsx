@@ -14,37 +14,48 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
 	return (
-		<div
-			className="flex flex-col justify-start items-center gap-8"
-			style={{ paddingTop: "50%" }}
-		>
-			<Link to="/registro">
+		<div>
+			<p
+				className="text-5xl text-onSecondary text-center"
+				style={{
+					textShadow: "0 0 6px black",
+				}}
+			>
+				Administracion de Alarmas
+			</p>
+			<div
+				className="flex flex-col justify-start items-center gap-8"
+				style={{ paddingTop: "50%" }}
+			>
+				<Link to="/registro">
+					<button
+						type="button"
+						style={{
+							width: 278,
+							padding: 10,
+							background: "black",
+							borderRadius: 100,
+							boxShadow: "4px 4px 4px black",
+							color: "white",
+						}}
+					>
+						Registrarse
+					</button>
+				</Link>
 				<button
 					type="button"
 					style={{
 						width: 278,
 						padding: 10,
-						background: "black",
+						background: "white",
 						borderRadius: 100,
 						boxShadow: "4px 4px 4px black",
+						color: "black",
 					}}
 				>
-					Registrarse
+					Login
 				</button>
-			</Link>
-			<button
-				type="button"
-				style={{
-					width: 278,
-					padding: 10,
-					background: "white",
-					borderRadius: 100,
-					boxShadow: "4px 4px 4px black",
-					color: "black",
-				}}
-			>
-				Login
-			</button>
+			</div>
 		</div>
 	);
 }

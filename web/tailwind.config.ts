@@ -11,9 +11,12 @@ export default {
       },
       colors: {
         primary: '#65558F',
+        onPrimary: '#4F378A',
         primaryContainer: '#EADDFF',
-        onSurface: '#1D1B20'
-      }
+        onSecondary: '#FFFFFF',
+        onSurface: '#1D1B20',
+        surfaceVariant: '#E7E0EC'
+      },
     },
   },
   plugins: [],
