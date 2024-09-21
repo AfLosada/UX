@@ -10,7 +10,7 @@ export const Dashboard = () => {
 		<div className="flex flex-col h-full w-full pr-10 pl-10">
 			<div className="pt-2 pb-2 flex flex-row w-full justify-start items-center text-white gap-4">
 				<button type="button">
-					<img src="3d_avatar_1.svg" alt="default-icon" />
+					<img src="/3d_avatar_1.svg" alt="default-icon" />
 				</button>
 				<p>Usuario</p>
 			</div>

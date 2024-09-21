@@ -25,7 +25,7 @@ export default function NavBar() {
 		>
 			<MenuIcon />
 			<button type="button">
-				<img src="3d_avatar_1.svg" alt="default-icon" />
+				<img src="/3d_avatar_1.svg" alt="default-icon" />
 			</button>
 		</div>
 	);

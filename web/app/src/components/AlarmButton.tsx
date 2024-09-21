@@ -20,6 +20,7 @@ export default function AlarmButton({
 					<div className="flex gap-1.5">
 						{[...Array(7)].map((_, i) => (
 							<div
+								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								key={i}
 								className="w-4 h-4 rounded-full shadow-black shadow bg-primary"
 							/>
@@ -31,7 +32,7 @@ export default function AlarmButton({
 						<input type="checkbox" value="" className="sr-only peer" />
 						<div className="relative w-14 h-8 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary" />
 					</label>
-					<Link className="w-8 h-8 text-primary" to="/configuracion">
+					<Link className="w-8 h-8 text-primary" to="/alarmas/configuracion">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"

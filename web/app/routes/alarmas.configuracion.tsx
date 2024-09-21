@@ -1,7 +1,7 @@
 import { Form, Link } from "@remix-run/react";
 import { useState } from "react";
 
-export const Registro = () => {
+export const Configuracion = () => {
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
@@ -24,8 +24,8 @@ export const Registro = () => {
 					border: "4px solid black",
 				}}
 			>
-				<h1 className="text-3xl font-bold mb-6 text-gray-800">Registro</h1>
-				<Form className="space-y-4" action="/alarmas/dashboard" method="POST">
+				<h1 className="text-3xl font-bold mb-6 text-gray-800">Configuracion</h1>
+				<Form className="space-y-4" action="/dashboard" method="POST">
 					<div className="space-y-2">
 						<label
 							htmlFor="email"
@@ -86,4 +86,4 @@ export const Registro = () => {
 	);
 };
 
-export default Registro;
+export default Configuracion;
