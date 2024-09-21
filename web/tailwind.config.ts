@@ -13,9 +13,10 @@ export default {
         primary: '#65558F',
         onPrimary: '#4F378A',
         primaryContainer: '#EADDFF',
+        secondary: '#E8DEF8',
         onSecondary: '#FFFFFF',
         onSurface: '#1D1B20',
-        surfaceVariant: '#E7E0EC'
+        surfaceVariant: '#E7E0EC',
       },
     },
   },
