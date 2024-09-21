@@ -1,4 +1,9 @@
+import type { ActionFunctionArgs } from "@remix-run/node";
 import AlarmButton from "~/src/components/AlarmButton";
+
+export async function action({ request }: ActionFunctionArgs) {
+	return null
+}
 
 export const Dashboard = () => {
 	return (
