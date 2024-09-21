@@ -1,17 +1,50 @@
 import type { MetaFunction } from "@remix-run/node";
-import NavBar from "~/src/components/NavBar";
+import { Link, useNavigate } from "@remix-run/react";
+import { useEffect, useState } from "react";
 
 export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
+	return [
+		{ title: "Administracion de Alarmas" },
+		{
+			name: "description",
+			content: "Bienvenida a la página de administración de alarmas",
+		},
+	];
 };
 
 export default function Index() {
-  return (
-    <div>
-      
-    </div>
-  );
+	return (
+		<div
+			className="flex flex-col justify-start items-center gap-8"
+			style={{ paddingTop: "50%" }}
+		>
+			<Link to="/registro">
+				<button
+					type="button"
+					style={{
+						width: 278,
+						padding: 10,
+						background: "black",
+						borderRadius: 100,
+						boxShadow: "4px 4px 4px black",
+					}}
+				>
+					Registrarse
+				</button>
+			</Link>
+			<button
+				type="button"
+				style={{
+					width: 278,
+					padding: 10,
+					background: "white",
+					borderRadius: 100,
+					boxShadow: "4px 4px 4px black",
+					color: "black",
+				}}
+			>
+				Login
+			</button>
+		</div>
+	);
 }

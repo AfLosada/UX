@@ -11,16 +11,12 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^6.1.1",
-    "@mui/material": "^6.1.1",
     "@remix-run/node": "^2.12.1",
     "@remix-run/react": "^2.12.1",
     "@remix-run/serve": "^2.12.1",
     "isbot": "^4.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "18.3.0-canary-01ab35a9a-20240228",
+    "react-dom": "18.3.0-canary-01ab35a9a-20240228"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.12.1",

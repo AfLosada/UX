@@ -6,16 +6,14 @@ export default {
     extend: {
       fontFamily: {
         sans: [
-          '"Inter"',
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
+          "Roboto"
         ],
       },
+      colors: {
+        primary: '#65558F',
+        primaryContainer: '#EADDFF',
+        onSurface: '#1D1B20'
+      }
     },
   },
   plugins: [],

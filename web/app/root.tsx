@@ -9,6 +9,7 @@ import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
 import NavBar from "./src/components/NavBar";
+import { BasePage } from "./src/components/BasePage";
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -33,13 +34,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Links />
 			</head>
 			<body>
-					<div
-						className="flex h-screen items-center justify-center"
-						style={{ background: "#6750A4" }}
-					>
-						<NavBar />
-						{children}
-					</div>
+				<div
+					className="flex h-screen items-center justify-center"
+					style={{ background: "#9884c4" }}
+				>
+					<NavBar />
+					<BasePage>
+						<Outlet />
+					</BasePage>
+				</div>
 				<ScrollRestoration />
 				<Scripts />
 			</body>

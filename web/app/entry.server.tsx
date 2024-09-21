@@ -11,10 +11,6 @@ import { createReadableStreamFromReadable } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
-import { CacheProvider, ThemeProvider } from "@emotion/react";
-import { CssBaseline } from "@mui/material";
-import createEmotionCache from "./src/createEmotionCache";
-import theme from "./src/theme";
 
 const ABORT_DELAY = 5_000;
 
@@ -51,19 +47,6 @@ function handleBotRequest(
 ) {
 	return new Promise((resolve, reject) => {
 		let shellRendered = false;
-		const cache = createEmotionCache();
-
-		function MuiRemixServer() {
-			return (
-				<CacheProvider value={cache}>
-					<ThemeProvider theme={theme}>
-						{/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-						<CssBaseline />
-						<RemixServer context={remixContext} url={request.url} />
-					</ThemeProvider>
-				</CacheProvider>
-			);
-		}
 		const { pipe, abort } = renderToPipeableStream(
 			<RemixServer
 				context={remixContext}
