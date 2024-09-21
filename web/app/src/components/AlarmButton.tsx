@@ -1,9 +1,7 @@
 import { Link } from "@remix-run/react";
+import type { Alarma } from "~/data/Alarmas";
 
-export default function AlarmButton({
-	name,
-	hour,
-}: { name: string; hour: string }) {
+export default function AlarmButton({ name, hora, dias, id }: Alarma) {
 	return (
 		<div className="w-auto flex items-center justify-center">
 			<div
@@ -15,14 +13,14 @@ export default function AlarmButton({
 				<div className="w-full">
 					<div className="flex flex-row items-center justify-between">
 						<div className="font-semibold text-sm">{name}</div>
-						<div className="text-sm text-gray-600">{hour}</div>
+						<div className="text-sm text-gray-600">{hora}</div>
 					</div>
 					<div className="flex gap-1.5">
-						{[...Array(7)].map((_, i) => (
+						{dias.map((isEnabled, i) => (
 							<div
 								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								key={i}
-								className="w-4 h-4 rounded-full shadow-black shadow bg-primary"
+								className={`border border-primary w-4 h-4 rounded-full shadow-black shadow ${isEnabled ? "bg-primary" : "bg-white"}`}
 							/>
 						))}
 					</div>
@@ -32,7 +30,10 @@ export default function AlarmButton({
 						<input type="checkbox" value="" className="sr-only peer" />
 						<div className="relative w-14 h-8 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-primary" />
 					</label>
-					<Link className="w-8 h-8 text-primary" to="/alarmas/configuracion">
+					<Link
+						className="w-8 h-8 text-primary"
+						to={`/alarmas/configuracion/${id}`}
+					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"

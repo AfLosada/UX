@@ -1,11 +1,36 @@
-import type { ActionFunctionArgs } from "@remix-run/node";
+import {
+	json,
+	type LoaderFunctionArgs,
+	type ActionFunctionArgs,
+} from "@remix-run/node";
+import { redirect, useLoaderData } from "@remix-run/react";
+import { getAlarmas, updateAlarma } from "~/data/Alarmas";
+import { prefs } from "~/prefs/prefs-cookie";
 import AlarmButton from "~/src/components/AlarmButton";
 
-export async function action({ request }: ActionFunctionArgs) {
-	return null
-}
+export const loader = async ({ request }: LoaderFunctionArgs) => {
+	const cookieHeader = request.headers.get("Cookie");
+	return json({ alarmas: await getAlarmas(cookieHeader || "") });
+};
+
+export const action = async ({ params, request }: ActionFunctionArgs) => {
+	console.log({ params, request })
+	const alarmaUpdated = await request.json();
+	const cookieHeader = request.headers.get("Cookie") || "";
+	const alarma = updateAlarma(cookieHeader, {
+		id: params.id,
+		...alarmaUpdated,
+	});
+	return json(alarma, {
+		headers: {
+			"Set-Cookie": await prefs.serialize(alarma),
+		},
+	});
+};
 
 export const Dashboard = () => {
+	const { alarmas } = useLoaderData<typeof loader>();
+
 	return (
 		<div className="flex flex-col h-full w-full pr-10 pl-10">
 			<div className="pt-2 pb-2 flex flex-row w-full justify-start items-center text-white gap-4">
@@ -56,10 +81,9 @@ export const Dashboard = () => {
 				}}
 			>
 				<div className="flex-wrap flex flex-row p-5 justify-around gap-4">
-					<AlarmButton name="Despertar" hour="7:00 p.m" />
-					<AlarmButton name="Despertar" hour="7:00 p.m" />
-					<AlarmButton name="Despertar" hour="7:00 p.m" />
-					<AlarmButton name="Despertar" hour="7:00 p.m" />
+					{alarmas.map((alarma) => (
+						<AlarmButton key={alarma.id} {...alarma} />
+					))}
 				</div>
 			</div>
 		</div>

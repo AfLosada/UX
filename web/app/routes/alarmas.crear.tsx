@@ -1,11 +1,34 @@
-import { Form } from "@remix-run/react";
+import type { ActionFunctionArgs } from "@remix-run/node";
+import { Form, json, redirect, useLoaderData } from "@remix-run/react";
 import { useState } from "react";
+import type { Alarma } from "~/data/Alarmas";
+import {
+	createAlarma,
+	dias,
+	getAlarma,
+	getAlarmas,
+	updateAlarma,
+} from "~/data/Alarmas";
 import TimePicker from "~/src/components/TimePicker";
 
-export const Configuracion = () => {
-	const [nombre, setNombre] = useState("");
-	const [hora, setHora] = useState("");
+export const loader = async ({
+	params,
+}: { params: { [K: string]: string } }) => {
+	return json({ alarma: {} as Alarma });
+};
 
+export const action = async ({ params, request }: ActionFunctionArgs) => {
+	const alarmaUpdated = await request.json();
+	createAlarma({ id: getAlarmas().length, ...alarmaUpdated });
+	return redirect("/alarmas/dashboard");
+};
+
+export const Configuracion = () => {
+	const { alarma } = useLoaderData<typeof loader>();
+
+	const [nombre, setNombre] = useState(alarma?.name);
+	const [hora, setHora] = useState(alarma?.hora);
+	const [repeticion, setRepeticion] = useState(alarma?.dias);
 	const [showTimePicker, setShowTimePicker] = useState(false);
 
 	return (
@@ -75,9 +98,32 @@ export const Configuracion = () => {
 								}}
 								required
 							/>
-							<p className="text-gray-600 text-xs">
-								Ingrese la hora de la alarma
-							</p>
+							<p className="text-gray-600 text-xs">Repeticion</p>
+							<div className="flex flex-row gap-2">
+								{repeticion?.map((habilitado, i) => {
+									return (
+										<button
+											// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
+											key={i}
+											type="button"
+											onClick={() => {
+												setRepeticion((repeticiones = []) => {
+													const copy = [...repeticiones];
+													repeticiones[i] = !repeticiones[i];
+													return copy;
+												});
+											}}
+											className={`content-center border border-primary w-8 h-8 rounded-full shadow-black shadow ${habilitado ? "bg-primary" : "bg-white"}`}
+										>
+											<p
+												className={`text-center ${habilitado ? "text-white" : "text-primary"}`}
+											>
+												{dias[i]}
+											</p>
+										</button>
+									);
+								})}
+							</div>
 						</div>
 						<button
 							type="submit"
@@ -90,7 +136,7 @@ export const Configuracion = () => {
 							Configurar
 						</button>
 						<button
-							type="button"
+							type="submit"
 							className="w-full py-2 px-4 border bg-onSecondary border-gray-300 rounded-md shadow-sm text-sm font-medium text-primary bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
 							style={{
 								borderRadius: 100,
