@@ -1,40 +1,28 @@
-# Welcome to Remix!
+# Administracion de Alarmas APP
 
-- 📖 [Remix docs](https://remix.run/docs)
+This app was created for the UX course of the Masters in Software Engineering. I decided to build it using remix + vite, as I wanted to learn how to work in these SSR frameworks. The app is also hosted in vercel and can be found by asking me for the link.
 
-## Development
+## Notes:
 
-Run the dev server:
+- There is no database connection, all state is stored in cookies that are SSR'd
+- There is no real user management.
 
-```shellscript
-npm run dev
-```
+# Requirements
 
-## Deployment
+A node/javascript runtime ([npm](https://www.npmjs.com/) or [bun](https://bun.sh/)). We recommend the following versions:
+- node: 20.10.0 or greater (this one requires npm > 10.2.3)
+- bun: 1.1.18 or greater
 
-First, build your app for production:
+# Instructions
 
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-npm start
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+1. Install the dependencies, you can use any of these commands (given the requirements above)
+  - `bun install`
+  - `npm install`
+2. You have two options: 
+  - Build and serve the app
+    - Execute the following command(s) in your terminal: `npm run build && npm run serve`. If you are using bun replace `npm` for `bun`.
+    - Open the app in `http://localhost:3000`
+  - Run the app on dev mode
+    - Exetue the following command(s) in your terminal: `npm run dev`. If you are using bun replace `npm` for `bun`.
+    - Open the app in `http://localhost:5173`
+3. Done!
