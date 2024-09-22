@@ -11,12 +11,32 @@ import { Alarma, dias } from '~/data/Alarmas'
 import { COOKIE_NAME, prefs } from '~/prefs/prefs-cookie.server'
 import { TimePicker } from '~/src/components/TimePicker'
 
-export const Configuracion = () => {
-  const formRef = useRef<HTMLFormElement>(null)
+export const loader = async ({ request, params }: LoaderFunctionArgs) => {
+  const cookieHeader = request.headers.get(COOKIE_NAME)
+  console.log(cookieHeader)
+  const { alarmas } = await prefs.parse(cookieHeader)
+  console.log(alarmas)
+  const { name, hora, dias } = alarmas.find(
+    (alarma: Alarma) => alarma.id === params.id
+  ) as Alarma
+  const alarma = {
+    id: params.id,
+    name,
+    hora,
+    dias,
+  }
+  console.log('configuracion alarma: ', alarma)
+  return json({ alarma: alarma })
+}
 
-  const [nombre, setNombre] = useState('')
-  const [hora, setHora] = useState('')
-  const [repeticion, setRepeticion] = useState(Array(7).fill(false))
+export const Configuracion = () => {
+  const submit = useSubmit()
+  const formRef = useRef<HTMLFormElement>(null)
+  const { alarma } = useLoaderData<typeof loader>()
+
+  const [nombre, setNombre] = useState(alarma?.name)
+  const [hora, setHora] = useState(alarma?.hora)
+  const [repeticion, setRepeticion] = useState(alarma?.dias)
   const [showTimePicker, setShowTimePicker] = useState(false)
 
   return (
@@ -43,7 +63,9 @@ export const Configuracion = () => {
             border: '4px solid black',
           }}
         >
-          <h1 className='text-3xl font-bold mb-6 text-gray-800'>Crear</h1>
+          <h1 className='text-3xl font-bold mb-6 text-gray-800'>
+            Configuracion
+          </h1>
           <Form className='space-y-4' method='PUT' ref={formRef}>
             <div className='space-y-2'>
               <label
@@ -131,7 +153,7 @@ export const Configuracion = () => {
                 boxShadow: '2px 2px 4px',
               }}
             >
-              Crear
+              Configurar
             </button>
           </Form>
         </div>
@@ -159,11 +181,17 @@ export async function action({ params, request }: ActionFunctionArgs) {
     dias: JSON.parse(formData.get('dias') as string),
     id: params.id,
   }
+  console.log('alarmaUpdated: ', alarmaUpdated)
   const cookie = await prefs.parse(request.headers.get('Cookie'))
   const newCookie = {
     ...cookie,
+    alarmas: cookie.alarmas.map((alarma: Alarma) => {
+      if (alarma.id === alarmaUpdated.id) {
+        return alarmaUpdated
+      }
+      return alarma
+    }),
   }
-  newCookie.alarmas.push(alarmaUpdated)
   return redirect('/alarmas', {
     headers: {
       'Set-Cookie': await prefs.serialize(newCookie),

@@ -25,7 +25,7 @@ export default function Index() {
 			</p>
 			<div
 				className="flex flex-col justify-start items-center gap-8"
-				style={{ paddingTop: "50%" }}
+				style={{ paddingTop: "30%", paddingBottom: "40%" }}
 			>
 				<Link to="/registro">
 					<button
