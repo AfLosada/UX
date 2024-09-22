@@ -35,7 +35,7 @@ export const loader = async ({ request, params }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get(COOKIE_NAME)
   try {
     const { user = {} } = await prefs.parse(cookieHeader)
-    console.log(user)
+
     return json({ usuario: user })
   } catch (e) {
 		return json({ usuario: {email: '', password: '', image: '/3d_avatar_1.svg'} })

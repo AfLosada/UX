@@ -16,7 +16,6 @@ export const loader = async ({ request, params }: LoaderFunctionArgs) => {
       image: '/3d_avatar_1.svg',
     },
   } = await prefs.parse(cookieHeader)
-  console.log(userc)
   return json({ usuario: user })
 }
 
@@ -145,8 +144,6 @@ export async function action({ params, request }: ActionFunctionArgs) {
     ...cookie,
     user: usuarioUpdated,
   }
-
-  console.log(usuarioUpdated)
 
   return redirect('/alarmas', {
     headers: {
