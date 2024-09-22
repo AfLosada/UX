@@ -11,14 +11,18 @@ import { COOKIE_NAME, prefs } from '~/prefs/prefs-cookie.server'
 
 export const loader = async ({ request, params }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get(COOKIE_NAME)
-  const { user = {} } = await prefs.parse(cookieHeader)
+  const {
+    user = {
+      image: '/3d_avatar_1.svg',
+    },
+  } = await prefs.parse(cookieHeader)
+  console.log(userc)
   return json({ usuario: user })
 }
 
 export const Usuario = () => {
   const { usuario } = useLoaderData<typeof loader>()
 
-  console.log(usuario)
   const [nombre, setNombre] = useState(usuario.email)
   const [password, setPassword] = useState(usuario.password)
   const [imagen, setImagen] = useState(usuario.image)
@@ -63,11 +67,11 @@ export const Usuario = () => {
                 Nombre
               </label>
               <input
-                id='nombre'
-                type='nombre'
-                name='name'
+                id='email'
+                type='email'
+                name='email'
                 className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
-                placeholder='Nombre'
+                placeholder='123@correo.com'
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
                 required
@@ -132,7 +136,7 @@ export const Usuario = () => {
 export async function action({ params, request }: ActionFunctionArgs) {
   const formData = await request.formData()
   const usuarioUpdated = {
-    name: formData.get('name'),
+    email: formData.get('email'),
     password: formData.get('password'),
     image: formData.get('image'),
   }
@@ -141,7 +145,9 @@ export async function action({ params, request }: ActionFunctionArgs) {
     ...cookie,
     user: usuarioUpdated,
   }
-  console.log('cookie: ', newCookie)
+
+  console.log(usuarioUpdated)
+
   return redirect('/alarmas', {
     headers: {
       'Set-Cookie': await prefs.serialize(newCookie),

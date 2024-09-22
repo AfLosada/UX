@@ -94,7 +94,6 @@ export async function action({ params, request }: ActionFunctionArgs) {
       password,
     }
   }
-  console.log('alarmas: + password', newCookie)
   return redirect('/alarmas', {
     headers: {
       'Set-Cookie': await prefs.serialize(newCookie),

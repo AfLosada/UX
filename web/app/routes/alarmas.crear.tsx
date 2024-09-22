@@ -99,7 +99,7 @@ export const Configuracion = () => {
                         setRepeticion((repeticiones = []) => {
                           const copy = [...repeticiones]
                           repeticiones[i] = !repeticiones[i]
-                          console.log(repeticiones)
+
                           return copy
                         })
                       }}

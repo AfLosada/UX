@@ -7,12 +7,12 @@ import { COOKIE_NAME, prefs } from '~/prefs/prefs-cookie.server'
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get('Cookie')
   const parsedCookie = await prefs.parse(cookieHeader)
-  console.log('registro loader')
+
   const cookie = {
     ...parsedCookie,
     alarmas: parsedCookie?.alarmas || defaultAlarmas,
   }
-  console.log('cookie: ', cookie)
+
   return json(
     { ok: true },
     {
@@ -110,13 +110,13 @@ export async function action({ request }: ActionFunctionArgs) {
   const newCookie = {
     ...parsedCookie,
   }
-  console.log('registro action')
-  console.log('alarmas: ', newCookie)
+
+
   const formData = await request.formData()
   const email = formData.get('email')
   const password = formData.get('password')
   const image = formData.get('image')
-  console.log({ email, password })
+
   if (!email || !password) {
     return json({ ok: false })
   }
@@ -125,7 +125,7 @@ export async function action({ request }: ActionFunctionArgs) {
     password,
     image: image || '/3d_avatar_1.svg',
   }
-  console.log('alarmas: + password', newCookie)
+
   return redirect('/alarmas', {
     headers: {
       'Set-Cookie': await prefs.serialize(newCookie),

@@ -33,13 +33,17 @@ export const links: LinksFunction = () => [
 
 export const loader = async ({ request, params }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get(COOKIE_NAME)
-  const { user = {} } = await prefs.parse(cookieHeader)
-  return json({ usuario: user })
+  try {
+    const { user = {} } = await prefs.parse(cookieHeader)
+    console.log(user)
+    return json({ usuario: user })
+  } catch (e) {
+		return json({ usuario: {email: '', password: '', image: '/3d_avatar_1.svg'} })
+	}
 }
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  const { usuario } = useLoaderData<typeof loader>()
-	console.log(usuario)
+  const { usuario = {} } = useLoaderData<typeof loader>()
   return (
     <html lang='en'>
       <head>

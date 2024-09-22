@@ -13,9 +13,9 @@ import { TimePicker } from '~/src/components/TimePicker'
 
 export const loader = async ({ request, params }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get(COOKIE_NAME)
-  console.log(cookieHeader)
+
   const { alarmas } = await prefs.parse(cookieHeader)
-  console.log(alarmas)
+
   const { name, hora, dias } = alarmas.find(
     (alarma: Alarma) => alarma.id === params.id
   ) as Alarma
@@ -25,7 +25,7 @@ export const loader = async ({ request, params }: LoaderFunctionArgs) => {
     hora,
     dias,
   }
-  console.log('configuracion alarma: ', alarma)
+
   return json({ alarma: alarma })
 }
 
@@ -121,7 +121,7 @@ export const Configuracion = () => {
                         setRepeticion((repeticiones = []) => {
                           const copy = [...repeticiones]
                           repeticiones[i] = !repeticiones[i]
-                          console.log(repeticiones)
+
                           return copy
                         })
                       }}
@@ -182,7 +182,7 @@ export async function action({ params, request }: ActionFunctionArgs) {
     dias: JSON.parse(formData.get('dias') as string),
     id: params.id,
   }
-  console.log('alarmaUpdated: ', alarmaUpdated)
+
   const cookie = await prefs.parse(request.headers.get('Cookie'))
   const newCookie = {
     ...cookie,
