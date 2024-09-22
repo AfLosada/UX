@@ -39,6 +39,8 @@ export const Configuracion = () => {
   const [repeticion, setRepeticion] = useState(alarma?.dias)
   const [showTimePicker, setShowTimePicker] = useState(false)
 
+  console.log(repeticion)
+
   return (
     <>
       <p
@@ -120,8 +122,7 @@ export const Configuracion = () => {
                       onClick={() => {
                         setRepeticion((repeticiones = []) => {
                           const copy = [...repeticiones]
-                          repeticiones[i] = !repeticiones[i]
-
+                          copy[i] = !repeticiones[i]
                           return copy
                         })
                       }}
