@@ -23,7 +23,6 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   )
 }
 
-
 export const Registro = () => {
   return (
     <>
@@ -57,7 +56,7 @@ export const Registro = () => {
             <input
               id='email'
               type='email'
-							name='email'
+              name='email'
               className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
               placeholder='ingrese un correo electrónico'
               required
@@ -73,7 +72,7 @@ export const Registro = () => {
             <input
               id='password'
               type='password'
-							name='password'
+              name='password'
               className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
               placeholder='ingrese una contraseña'
               required
@@ -116,6 +115,7 @@ export async function action({ request }: ActionFunctionArgs) {
   const formData = await request.formData()
   const email = formData.get('email')
   const password = formData.get('password')
+  const image = formData.get('image')
   console.log({ email, password })
   if (!email || !password) {
     return json({ ok: false })
@@ -123,6 +123,7 @@ export async function action({ request }: ActionFunctionArgs) {
   newCookie['user'] = {
     email,
     password,
+    image: image || '/3d_avatar_1.svg',
   }
   console.log('alarmas: + password', newCookie)
   return redirect('/alarmas', {

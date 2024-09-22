@@ -10,43 +10,21 @@ import AlarmButton from '~/src/components/AlarmButton'
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   const cookieHeader = request.headers.get(COOKIE_NAME)
-  const { alarmas } = await prefs.parse(cookieHeader)
-  return json({ alarmas: (alarmas || defaultAlarmas) as Alarma[] })
-}
-
-export async function action({ params, request }: ActionFunctionArgs) {
-  const cookieHeader = request.headers.get('Cookie')
-  const parsedCookie = await prefs.parse(cookieHeader)
-  const newCookie = {
-    ...parsedCookie,
-  }
-  console.log('alarmas: ', newCookie)
-  const formData = await request.formData()
-  const email = formData.get('email')
-  const password = formData.get('password')
-  if (email && password) {
-    newCookie['user'] = {
-      email,
-      password,
-    }
-  }
-  console.log('alarmas: + password', newCookie)
-  return redirect('/alarmas', {
-    headers: {
-      'Set-Cookie': await prefs.serialize(newCookie),
-    },
+  const { alarmas, user } = await prefs.parse(cookieHeader)
+  return json({
+    alarmas: (alarmas || defaultAlarmas) as Alarma[],
+    usuario: user,
   })
 }
 
 export const Dashboard = () => {
-  const { alarmas } = useLoaderData<typeof loader>()
-
+  const { alarmas, usuario } = useLoaderData<typeof loader>()
   return (
     <div className='flex flex-col h-full w-full pr-10 pl-10'>
       <div className='pt-2 pb-2 flex flex-row w-full justify-start items-center text-white gap-4'>
-        <button type='button'>
-          <img src='/3d_avatar_1.svg' alt='default-icon' />
-        </button>
+        <Link type='button' to='/usuario'>
+          <img src={usuario.image} alt='default-icon' className='w-10 h-10'/>
+        </Link>
         <p>Usuario</p>
       </div>
       <div className='pt-2 pb-2 flex flex-row w-full justify-center'>
@@ -100,4 +78,28 @@ export const Dashboard = () => {
     </div>
   )
 }
+
+export async function action({ params, request }: ActionFunctionArgs) {
+  const cookieHeader = request.headers.get('Cookie')
+  const parsedCookie = await prefs.parse(cookieHeader)
+  const newCookie = {
+    ...parsedCookie,
+  }
+  const formData = await request.formData()
+  const email = formData.get('email')
+  const password = formData.get('password')
+  if (email && password) {
+    newCookie['user'] = {
+      email,
+      password,
+    }
+  }
+  console.log('alarmas: + password', newCookie)
+  return redirect('/alarmas', {
+    headers: {
+      'Set-Cookie': await prefs.serialize(newCookie),
+    },
+  })
+}
+
 export default Dashboard

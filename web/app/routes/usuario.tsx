@@ -7,17 +7,21 @@ import {
   useSubmit,
 } from '@remix-run/react'
 import { useRef, useState } from 'react'
-import { Alarma, dias } from '~/data/Alarmas'
 import { COOKIE_NAME, prefs } from '~/prefs/prefs-cookie.server'
-import { TimePicker } from '~/src/components/TimePicker'
 
-export const Configuracion = () => {
-  const formRef = useRef<HTMLFormElement>(null)
+export const loader = async ({ request, params }: LoaderFunctionArgs) => {
+  const cookieHeader = request.headers.get(COOKIE_NAME)
+  const { user = {} } = await prefs.parse(cookieHeader)
+  return json({ usuario: user })
+}
 
-  const [nombre, setNombre] = useState('')
-  const [hora, setHora] = useState('')
-  const [repeticion, setRepeticion] = useState(Array(7).fill(false))
-  const [showTimePicker, setShowTimePicker] = useState(false)
+export const Usuario = () => {
+  const { usuario } = useLoaderData<typeof loader>()
+
+  console.log(usuario)
+  const [nombre, setNombre] = useState(usuario.email)
+  const [password, setPassword] = useState(usuario.password)
+  const [imagen, setImagen] = useState(usuario.image)
 
   return (
     <>
@@ -44,8 +48,13 @@ export const Configuracion = () => {
             border: '4px solid black',
           }}
         >
-          <h1 className='text-3xl font-bold mb-6 text-gray-800'>Crear</h1>
-          <Form className='space-y-4' method='PUT' ref={formRef}>
+          <div className='flex flex-row w-full'>
+            <h1 className='text-4xl font-bold mb-6 text-gray-800'>
+              Configuracion de Perfil
+            </h1>
+            <img src={imagen} className='w-24 h-24' />
+          </div>
+          <Form className='space-y-4' method='PUT'>
             <div className='space-y-2'>
               <label
                 htmlFor='nombre'
@@ -58,7 +67,7 @@ export const Configuracion = () => {
                 type='nombre'
                 name='name'
                 className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
-                placeholder='Despertar'
+                placeholder='Nombre'
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
                 required
@@ -75,53 +84,32 @@ export const Configuracion = () => {
                 Hora
               </label>
               <input
-                id='hora'
-                type='time'
-                name='hora'
+                id='password'
+                type='password'
+                name='password'
                 className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
                 placeholder='ingrese una contraseña'
-                value={hora}
-                onChange={(e) => setHora(e.target.value)}
-                onClick={() => {
-                  setShowTimePicker(true)
-                }}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 required
               />
-              <p className='text-gray-600 text-xs'>Repeticion</p>
-              <div className='flex flex-row gap-2'>
-                {repeticion?.map((habilitado, i) => {
-                  return (
-                    <button
-                      // biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
-                      key={i}
-                      type='button'
-                      onClick={() => {
-                        setRepeticion((repeticiones = []) => {
-                          const copy = [...repeticiones]
-                          repeticiones[i] = !repeticiones[i]
-                          console.log(repeticiones)
-                          return copy
-                        })
-                      }}
-                      className={`content-center border border-primary w-8 h-8 rounded-full shadow-black shadow ${
-                        habilitado ? 'bg-primary' : 'bg-white'
-                      }`}
-                    >
-                      <p
-                        className={`text-center ${
-                          habilitado ? 'text-white' : 'text-primary'
-                        }`}
-                      >
-                        {dias[i]}
-                      </p>
-                    </button>
-                  )
-                })}
-              </div>
+            </div>
+            <div className='space-y-2'>
+              <label
+                htmlFor='hora'
+                className='block text-sm font-medium text-gray-700'
+              >
+                Imagen
+              </label>
               <input
-                type='hidden'
-                name='dias'
-                value={JSON.stringify(repeticion)}
+                id='image'
+                type='url'
+                name='image'
+                className='w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-purple-500 focus:border-purple-500'
+                placeholder='url de la imagen'
+                value={imagen}
+                onChange={(e) => setImagen(e.target.value)}
+                required
               />
             </div>
             <button
@@ -132,21 +120,10 @@ export const Configuracion = () => {
                 boxShadow: '2px 2px 4px',
               }}
             >
-              Crear
+              Actualizar
             </button>
           </Form>
         </div>
-        {showTimePicker && (
-          <TimePicker
-            onClose={() => {
-              setShowTimePicker(false)
-            }}
-            onSubmit={(hora: string) => {
-              setHora(hora)
-              setShowTimePicker(false)
-            }}
-          />
-        )}
       </div>
     </>
   )
@@ -154,17 +131,17 @@ export const Configuracion = () => {
 
 export async function action({ params, request }: ActionFunctionArgs) {
   const formData = await request.formData()
-  const alarmaUpdated = {
+  const usuarioUpdated = {
     name: formData.get('name'),
-    hora: formData.get('hora'),
-    dias: JSON.parse(formData.get('dias') as string),
-    id: params.id,
+    password: formData.get('password'),
+    image: formData.get('image'),
   }
   const cookie = await prefs.parse(request.headers.get('Cookie'))
   const newCookie = {
     ...cookie,
+    user: usuarioUpdated,
   }
-  newCookie.alarmas.push(alarmaUpdated)
+  console.log('cookie: ', newCookie)
   return redirect('/alarmas', {
     headers: {
       'Set-Cookie': await prefs.serialize(newCookie),
@@ -172,4 +149,4 @@ export async function action({ params, request }: ActionFunctionArgs) {
   })
 }
 
-export default Configuracion
+export default Usuario

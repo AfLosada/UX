@@ -52,7 +52,8 @@ export const Configuracion = () => {
       <div
         className='flex flex-row'
         style={{
-          marginTop: '20%',
+          marginTop: '10%',
+          marginBottom: '30%',
         }}
       >
         <div
