@@ -98,7 +98,7 @@ export const Configuracion = () => {
                       onClick={() => {
                         setRepeticion((repeticiones = []) => {
                           const copy = [...repeticiones]
-                          repeticiones[i] = !repeticiones[i]
+                          copy[i] = !repeticiones[i]
 
                           return copy
                         })

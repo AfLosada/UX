@@ -20,7 +20,7 @@ export const TimePicker = ({
 					<input
 						type="number"
 						className="text-4xl text-primary w-full text-center bg-transparent focus:outline-none"
-						placeholder="20"
+						placeholder="09"
 						maxLength={2}
 						value={selectedHour}
 						onChange={(e) => setSelectedHour(e.target.value)}
