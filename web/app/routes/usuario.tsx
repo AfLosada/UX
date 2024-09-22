@@ -39,7 +39,7 @@ export const Usuario = () => {
       <div
         className='flex flex-row'
         style={{
-          marginTop: '10%',
+          marginTop: '5%',
           marginBottom: '30%',
         }}
       >
