@@ -30,14 +30,14 @@ export const Configuracion = () => {
         Administracion de Alarmas
       </p>
       <div
-        className='flex flex-row'
+        className='flex flex-row justify-evenly'
         style={{
           marginTop: '10%',
           marginBottom: '30%',
         }}
       >
         <div
-          className='w-full max-w-md mx-auto p-6 bg-white rounded-lg shadow-md'
+          className='w-full max-w-md p-6 bg-white rounded-lg shadow-md'
           style={{
             boxShadow: '8px 8px 4px black',
             width: 476,
