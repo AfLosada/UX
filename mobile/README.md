@@ -33,3 +33,6 @@ git clone https://github.com/AfLosada/UX.git
   5. Click en Run o en Debug.
 
 ![img](https://github.com/AfLosada/UX/blob/main/mobile/Preview.png)
+
+Nota: La apalicacion esta utilizando la version mas reciente de Android Studio y Android SDK, se recomienda tener la version mas reciente de Android Studio para evitar problemas de compatibilidad.
+Si no se esta usando la version mas reciente es posible que se necesite actualizar la version del agp a una menor o igual a la 8.4.0 en el archivo libs.versions.toml
