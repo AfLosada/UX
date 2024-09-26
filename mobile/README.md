@@ -32,4 +32,4 @@ git clone https://github.com/AfLosada/UX.git
   4. Seleccione App en la barra de herramientas de Android Studio.
   5. Click en Run o en Debug.
 
-![img](/Preview.png)
+![img](https://github.com/AfLosada/UX/blob/main/mobile/Preview.png)
