@@ -22,7 +22,7 @@ import androidx.compose.ui.unit.sp
 fun NotificationsSettingsComponent(
     modifier: Modifier = Modifier
 ) {
-    var isExpanded by remember { mutableStateOf(true) }
+    var isExpanded by remember { mutableStateOf(false) }
     var switchChecked by remember { mutableStateOf(false) }
 
     Column(
