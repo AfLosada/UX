@@ -1,0 +1,1062 @@
+{
+  "name": "login2",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "RoASMrNTObu1WqH5Qilieg",
+    "node": "88:1315",
+    "version": "6692187691",
+    "component-id": "69c55a33b1e735b3b2759cc75c1411f124e2910e"
+  },
+  "default": "Login2",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Login-login2"
+      },
+      {
+        "type": "group",
+        "id": "Textfield-user-login2-1"
+      },
+      {
+        "type": "group",
+        "id": "text field-login2"
+      },
+      {
+        "type": "group",
+        "id": "Volver-login2"
+      },
+      {
+        "type": "group",
+        "id": "Button-inicia-login2"
+      },
+      {
+        "type": "group",
+        "id": "Button-anonimo-login2"
+      },
+      {
+        "type": "text",
+        "id": "Inicia sesión-login2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-inicia-login2"
+      },
+      {
+        "type": "text",
+        "id": "label-text-inicia-login2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-anonimo-login2"
+      },
+      {
+        "type": "text",
+        "id": "label-text-anonimo-login2"
+      },
+      {
+        "type": "group",
+        "id": "Textfield-user-login2-1_synth"
+      },
+      {
+        "type": "group",
+        "id": "supporting-text"
+      },
+      {
+        "type": "group",
+        "id": "text field-user-login2"
+      },
+      {
+        "type": "vector",
+        "id": "Active indicator-login2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-user-login2"
+      },
+      {
+        "type": "group",
+        "id": "content-user-login2"
+      },
+      {
+        "type": "group",
+        "id": "trailing-icon-user-login2"
+      },
+      {
+        "type": "group",
+        "id": "label-text-user-login2"
+      },
+      {
+        "type": "group",
+        "id": "input-text-user-login2"
+      },
+      {
+        "type": "text",
+        "id": "label-text1-user-login2"
+      },
+      {
+        "type": "text",
+        "id": "input-text1-user-login2"
+      },
+      {
+        "type": "group",
+        "id": "containeruser2-login2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-user2-login2"
+      },
+      {
+        "type": "group",
+        "id": "Icon-user2-login2"
+      },
+      {
+        "type": "vector",
+        "id": "icon-user2-login2"
+      },
+      {
+        "type": "text",
+        "id": "supporting-text-l2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-login2"
+      },
+      {
+        "type": "group",
+        "id": "content-login2"
+      },
+      {
+        "type": "group",
+        "id": "trailing-icon-login2"
+      },
+      {
+        "type": "group",
+        "id": "label-text-pass-login2"
+      },
+      {
+        "type": "group",
+        "id": "input-text-pass1-login2"
+      },
+      {
+        "type": "text",
+        "id": "label-text-pass1-login2"
+      },
+      {
+        "type": "text",
+        "id": "input-text-pass2-login2"
+      },
+      {
+        "type": "group",
+        "id": "container-pass-login2"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-pass-icon-login2"
+      },
+      {
+        "type": "group",
+        "id": "Icon-pass2-login2"
+      },
+      {
+        "type": "vector",
+        "id": "icon-pass2-login2"
+      }
+    ],
+    "modes": {
+      "Login2": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Login-login2",
+              "Textfield-user-login2-1",
+              "text field-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Login-login2",
+            "is-structured": false,
+            "children": [
+              "Volver-login2",
+              "Button-inicia-login2",
+              "Button-anonimo-login2",
+              "Inicia sesión-login2"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Textfield-user-login2-1",
+            "margin": {
+              "left": 20.0,
+              "top": 243.0,
+              "right": 20.0,
+              "bottom": 501.0
+            },
+            "stroke-alignment": "center",
+            "is-structured": false,
+            "children": [
+              "Textfield-user-login2-1_synth",
+              "supporting-text"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "text field-login2",
+            "margin": {
+              "left": 20.0,
+              "top": 331.0,
+              "right": 20.0,
+              "bottom": 413.0
+            },
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "state-layer-login2"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 280.00000000000006,
+              "saturation": 0.03862660944206007,
+              "value": 0.9137254901960784
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Volver-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 44.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 800.0
+              }
+            },
+            "is-structured": false,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Button-inicia-login2",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 660.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-alignment": "center",
+            "children": [
+              "state-layer-inicia-login2"
+            ],
+            "item-spacing": 8.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            }
+          },
+          {
+            "id": "Button-anonimo-login2",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 740.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 269.99999999999994,
+              "saturation": 0.07936507936507942,
+              "value": 0.49411764705882355
+            },
+            "children": [
+              "state-layer-anonimo-login2"
+            ],
+            "item-spacing": 8.0
+          },
+          {
+            "id": "Inicia sesión-login2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 70.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 318.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 80.0
+              }
+            },
+            "font-weight": "^md.sys.typescale.display-small.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.16470588235294117
+            },
+            "text-content": "Inicia sesión",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": "^md.sys.typescale.display-small.size",
+            "letter-spacing": "^md.sys.typescale.display-small.tracking",
+            "line-height": "^md.sys.typescale.display-small.line-height",
+            "typeface": "^md.sys.typescale.display-small.font"
+          },
+          {
+            "id": "state-layer-inicia-login2",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-inicia-login2"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-inicia-login2",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Iniciar Sesion",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          },
+          {
+            "id": "state-layer-anonimo-login2",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-anonimo-login2"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-anonimo-login2",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            },
+            "text-content": "Continuar Anónimo",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          },
+          {
+            "id": "Textfield-user-login2-1_synth",
+            "opacity": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 56.0
+              }
+            },
+            "stroke-alignment": "center",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "text field-user-login2",
+              "Active indicator-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "supporting-text",
+            "presence": false,
+            "padding": {
+              "left": 16.0,
+              "top": 4.0,
+              "right": 16.0
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "end",
+                "offset": 20.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 20.0
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "supporting-text-l2"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "text field-user-login2",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "state-layer-user-login2"
+            ],
+            "item-spacing": 10.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 280.00000000000006,
+              "saturation": 0.03862660944206007,
+              "value": 0.9137254901960784
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Active indicator-login2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": -1.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 0.0
+              }
+            },
+            "vector-content": "active_indicator_login2.svg"
+          },
+          {
+            "id": "state-layer-user-login2",
+            "padding": {
+              "left": 16.0,
+              "top": 4.0,
+              "bottom": 4.0
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "content-user-login2",
+              "trailing-icon-user-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "content-user-login2",
+            "padding": {
+              "top": 4.0,
+              "bottom": 4.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              }
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "label-text-user-login2",
+              "input-text-user-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "trailing-icon-user-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              }
+            },
+            "children": [
+              "containeruser2-login2"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-user-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "label-text1-user-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "input-text-user-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "input-text1-user-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "label-text1-user-login2",
+            "font-weight": "^md.sys.typescale.body-small.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 263.99999999999994,
+              "saturation": 0.12658227848101275,
+              "value": 0.30980392156862746
+            },
+            "text-content": "Correo Electrónico:",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "^md.sys.typescale.body-small.size",
+            "letter-spacing": "^md.sys.typescale.body-small.tracking",
+            "line-height": "^md.sys.typescale.body-small.line-height",
+            "typeface": "^md.sys.typescale.body-small.font"
+          },
+          {
+            "id": "input-text1-user-login2",
+            "font-weight": "^md.sys.typescale.body-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 264.0,
+              "saturation": 0.15625,
+              "value": 0.12549019607843137
+            },
+            "text-content": "",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.body-large.size",
+            "letter-spacing": "^md.sys.typescale.body-large.tracking",
+            "line-height": "^md.sys.typescale.body-large.line-height",
+            "typeface": "^md.sys.typescale.body-large.font"
+          },
+          {
+            "id": "containeruser2-login2",
+            "border-radius": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "state-layer-user2-login2"
+            ],
+            "item-spacing": 10.0
+          },
+          {
+            "id": "state-layer-user2-login2",
+            "padding": 8.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon-user2-login2"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "Icon-user2-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "icon-user2-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "icon-user2-login2",
+            "margin": 2.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon_user2_login2.svg"
+          },
+          {
+            "id": "supporting-text-l2",
+            "presence": false,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "^md.sys.typescale.body-small.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 263.99999999999994,
+              "saturation": 0.12658227848101275,
+              "value": 0.30980392156862746
+            },
+            "text-content": "",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": "^md.sys.typescale.body-small.size",
+            "letter-spacing": "^md.sys.typescale.body-small.tracking",
+            "line-height": "^md.sys.typescale.body-small.line-height",
+            "typeface": "^md.sys.typescale.body-small.font"
+          },
+          {
+            "id": "state-layer-login2",
+            "padding": {
+              "left": 16.0,
+              "top": 4.0,
+              "bottom": 4.0
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "content-login2",
+              "trailing-icon-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "content-login2",
+            "padding": {
+              "top": 4.0,
+              "bottom": 4.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              }
+            },
+            "cross-axis-align": "start",
+            "children": [
+              "label-text-pass-login2",
+              "input-text-pass1-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "trailing-icon-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 48.0
+              }
+            },
+            "children": [
+              "container-pass-login2"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-pass-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "label-text-pass1-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "input-text-pass1-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "input-text-pass2-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "label-text-pass1-login2",
+            "font-weight": "^md.sys.typescale.body-small.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 263.99999999999994,
+              "saturation": 0.12658227848101275,
+              "value": 0.30980392156862746
+            },
+            "text-content": "Contraseña”",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "^md.sys.typescale.body-small.size",
+            "letter-spacing": "^md.sys.typescale.body-small.tracking",
+            "line-height": "^md.sys.typescale.body-small.line-height",
+            "typeface": "^md.sys.typescale.body-small.font"
+          },
+          {
+            "id": "input-text-pass2-login2",
+            "font-weight": "^md.sys.typescale.body-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 264.0,
+              "saturation": 0.15625,
+              "value": 0.12549019607843137
+            },
+            "text-content": "",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.body-large.size",
+            "letter-spacing": "^md.sys.typescale.body-large.tracking",
+            "line-height": "^md.sys.typescale.body-large.line-height",
+            "typeface": "^md.sys.typescale.body-large.font"
+          },
+          {
+            "id": "container-pass-login2",
+            "border-radius": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "state-layer-pass-icon-login2"
+            ],
+            "item-spacing": 10.0
+          },
+          {
+            "id": "state-layer-pass-icon-login2",
+            "padding": 8.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Icon-pass2-login2"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "Icon-pass2-login2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 24.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "icon-pass2-login2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "icon-pass2-login2",
+            "margin": 2.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon_pass2_login2.svg"
+          }
+        ]
+      }
+    }
+  },
+  "ambients": {
+    "md.sys.typescale.display-small.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.display-small.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.label-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-small.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.body-small.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-small.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-small.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-small.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.body-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-large.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Login2",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      },
+      "ambients": {
+        "md.sys.typescale.display-small.weight": 400.0,
+        "md.sys.typescale.display-small.size": 36.0,
+        "md.sys.typescale.display-small.line-height": 1.222222213745117,
+        "md.sys.typescale.label-large.weight": 500.0,
+        "md.sys.typescale.label-large.size": 14.0,
+        "md.sys.typescale.label-large.tracking": 0.10000000149011612,
+        "md.sys.typescale.label-large.line-height": 1.4285714721679688,
+        "md.sys.typescale.body-small.weight": 400.0,
+        "md.sys.typescale.body-small.size": 12.0,
+        "md.sys.typescale.body-small.tracking": 0.4000000059604645,
+        "md.sys.typescale.body-small.line-height": 1.3333332824707032,
+        "md.sys.typescale.body-large.weight": 400.0,
+        "md.sys.typescale.body-large.size": 16.0,
+        "md.sys.typescale.body-large.tracking": 0.5,
+        "md.sys.typescale.body-large.line-height": 1.5
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

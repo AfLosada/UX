@@ -1,0 +1,2082 @@
+{
+  "name": "dashboard",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "RoASMrNTObu1WqH5Qilieg",
+    "node": "88:1316",
+    "version": "6692187691",
+    "component-id": "f5e5658df752af8e3e5a1778118a496a998ec42c"
+  },
+  "default": "Dashboard",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "dashboard-volver"
+      },
+      {
+        "type": "group",
+        "id": "boton-crear"
+      },
+      {
+        "type": "group",
+        "id": "alarma2"
+      },
+      {
+        "type": "group",
+        "id": "alarma1"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-boton-crear"
+      },
+      {
+        "type": "text",
+        "id": "label-text-boton-crear"
+      },
+      {
+        "type": "group",
+        "id": "Frame 1-alarma2-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Nombre-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Dias-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "settings-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Switch-alarma2"
+      },
+      {
+        "type": "text",
+        "id": "hora-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Detalle Alarma-alarma2"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-alarma2-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-alarma2"
+      },
+      {
+        "type": "text",
+        "id": "Initial-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-domingo"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-sabado"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-viernes"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-jueves"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-miercoles"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-martes"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-lunes"
+      },
+      {
+        "type": "vector",
+        "id": "Background-domingo"
+      },
+      {
+        "type": "text",
+        "id": "Initial-domingo"
+      },
+      {
+        "type": "vector",
+        "id": "Background-sabado"
+      },
+      {
+        "type": "text",
+        "id": "Initial-sabado"
+      },
+      {
+        "type": "vector",
+        "id": "Background-viernes"
+      },
+      {
+        "type": "text",
+        "id": "Initial-viernes"
+      },
+      {
+        "type": "vector",
+        "id": "Background-jueves"
+      },
+      {
+        "type": "text",
+        "id": "Initial-jueves"
+      },
+      {
+        "type": "vector",
+        "id": "Background-miercoles"
+      },
+      {
+        "type": "text",
+        "id": "Initial-miercoles"
+      },
+      {
+        "type": "vector",
+        "id": "Background-martes"
+      },
+      {
+        "type": "text",
+        "id": "Initial-martes"
+      },
+      {
+        "type": "vector",
+        "id": "Background-lunes"
+      },
+      {
+        "type": "text",
+        "id": "Initial-lunes"
+      },
+      {
+        "type": "vector",
+        "id": "icon-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "ecendido-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Target-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "State-layer-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Handle shape-alarma2"
+      },
+      {
+        "type": "vector",
+        "id": "Container-alarma2"
+      },
+      {
+        "type": "group",
+        "id": "Frame 1-alarma1-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Nombre-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Dias-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "settings-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Switch-alarma1"
+      },
+      {
+        "type": "text",
+        "id": "hora-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Detalle Alarma-alarma1"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 4-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-alarma1-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-alarma1"
+      },
+      {
+        "type": "text",
+        "id": "Initial-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-domingo-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-sabado-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-viernes-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-jueves-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-miercoles-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-martes-dashboard"
+      },
+      {
+        "type": "group",
+        "id": "Monogram-lunes-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-domingo-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-domingo-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-sabado-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-sabado-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-viernes-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-viernes-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-jueves-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-jueves-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-miercoles-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-miercoles-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-martes-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-martes-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "Background-lunes-dashboard"
+      },
+      {
+        "type": "text",
+        "id": "Initial-lunes-dashboard"
+      },
+      {
+        "type": "vector",
+        "id": "icon-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "ecendido-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Target-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "State-layer-alarma1"
+      },
+      {
+        "type": "group",
+        "id": "Handle shape-alarma1"
+      },
+      {
+        "type": "vector",
+        "id": "Container-alarma1"
+      }
+    ],
+    "modes": {
+      "Dashboard": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "dashboard-volver",
+              "boton-crear",
+              "alarma2",
+              "alarma1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "dashboard-volver",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 44.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 800.0
+              }
+            },
+            "is-structured": false,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "boton-crear",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 740.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-alignment": "center",
+            "children": [
+              "state-layer-boton-crear"
+            ],
+            "item-spacing": 8.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            }
+          },
+          {
+            "id": "alarma2",
+            "border-radius": 15.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 19.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 231.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 90.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Frame 1-alarma2-dashboard",
+              "Nombre-alarma2",
+              "Dias-alarma2",
+              "settings-alarma2",
+              "Switch-alarma2",
+              "hora-alarma2"
+            ]
+          },
+          {
+            "id": "alarma1",
+            "border-radius": 15.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 19.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 104.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 90.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Frame 1-alarma1-dashboard",
+              "Nombre-alarma1",
+              "Dias-alarma1",
+              "settings-alarma1",
+              "Switch-alarma1",
+              "hora-alarma1"
+            ]
+          },
+          {
+            "id": "state-layer-boton-crear",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-boton-crear"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-boton-crear",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Crear",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          },
+          {
+            "id": "Frame 1-alarma2-dashboard",
+            "is-structured": false,
+            "children": [
+              "Detalle Alarma-alarma2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Nombre-alarma2",
+            "margin": {
+              "left": 7.0,
+              "top": 16.9560546875,
+              "right": 278.59510803222656,
+              "bottom": 38.0
+            },
+            "is-structured": false,
+            "children": [
+              "Monogram-alarma2-dashboard"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Dias-alarma2",
+            "margin": {
+              "left": 44.0,
+              "top": 59.0,
+              "right": 45.0,
+              "bottom": 4.0
+            },
+            "is-structured": false,
+            "children": [
+              "Monogram-domingo",
+              "Monogram-sabado",
+              "Monogram-viernes",
+              "Monogram-jueves",
+              "Monogram-miercoles",
+              "Monogram-martes",
+              "Monogram-lunes"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "settings-alarma2",
+            "margin": {
+              "left": 264.0,
+              "top": 2.0,
+              "right": 11.0,
+              "bottom": 43.0
+            },
+            "is-structured": false,
+            "children": [
+              "icon-alarma2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Switch-alarma2",
+            "padding": {
+              "left": 4.0,
+              "top": 2.0,
+              "right": 4.0,
+              "bottom": 2.0
+            },
+            "margin": {
+              "left": 186.0,
+              "top": 6.0,
+              "right": 82.0,
+              "bottom": 52.0
+            },
+            "border-radius": 100.0,
+            "arrangement": "row",
+            "main-axis-align": "end",
+            "children": [
+              "ecendido-alarma2"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            },
+            "clip-content": false
+          },
+          {
+            "id": "hora-alarma2",
+            "margin": {
+              "left": 55.0,
+              "top": 11.739013671875,
+              "right": 216.0,
+              "bottom": 62.60881233215332
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 500.0,
+            "text-content": "7:00 A.M.",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Detalle Alarma-alarma2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 90.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Rectangle 4-alarma2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Rectangle 4-alarma2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "rectangle_4_alarma2.svg"
+          },
+          {
+            "id": "Monogram-alarma2-dashboard",
+            "is-structured": false,
+            "children": [
+              "Background-alarma2",
+              "Initial-alarma2"
+            ],
+            "background-color": {
+              "alpha": 0.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Background-alarma2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_alarma2.svg"
+          },
+          {
+            "id": "Initial-alarma2",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.6804733276367188
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 34.40489196777344
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 34.40489196777344
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "B",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 13.761957168579102,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.5000001525878905
+          },
+          {
+            "id": "Monogram-domingo",
+            "margin": {
+              "right": 204.64429664611816
+            },
+            "is-structured": false,
+            "children": [
+              "Background-domingo",
+              "Initial-domingo"
+            ]
+          },
+          {
+            "id": "Monogram-sabado",
+            "margin": {
+              "left": 34.107383728027344,
+              "right": 170.5369110107422
+            },
+            "is-structured": false,
+            "children": [
+              "Background-sabado",
+              "Initial-sabado"
+            ]
+          },
+          {
+            "id": "Monogram-viernes",
+            "margin": {
+              "left": 68.21476745605469,
+              "right": 136.42952728271484
+            },
+            "is-structured": false,
+            "children": [
+              "Background-viernes",
+              "Initial-viernes"
+            ]
+          },
+          {
+            "id": "Monogram-jueves",
+            "margin": {
+              "left": 102.3221435546875,
+              "right": 102.32215118408203
+            },
+            "is-structured": false,
+            "children": [
+              "Background-jueves",
+              "Initial-jueves"
+            ]
+          },
+          {
+            "id": "Monogram-miercoles",
+            "margin": {
+              "left": 136.42953491210938,
+              "right": 68.21476745605469
+            },
+            "is-structured": false,
+            "children": [
+              "Background-miercoles",
+              "Initial-miercoles"
+            ]
+          },
+          {
+            "id": "Monogram-martes",
+            "margin": {
+              "left": 170.5369110107422,
+              "right": 34.10737609863281
+            },
+            "is-structured": false,
+            "children": [
+              "Background-martes",
+              "Initial-martes"
+            ]
+          },
+          {
+            "id": "Monogram-lunes",
+            "margin": {
+              "left": 204.644287109375,
+              "right": 0.0000152587890625
+            },
+            "is-structured": false,
+            "children": [
+              "Background-lunes",
+              "Initial-lunes"
+            ]
+          },
+          {
+            "id": "Background-domingo",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_domingo.svg"
+          },
+          {
+            "id": "Initial-domingo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.677851676940918
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "L",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-sabado",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_sabado.svg"
+          },
+          {
+            "id": "Initial-sabado",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "M",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-viernes",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_viernes.svg"
+          },
+          {
+            "id": "Initial-viernes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "M",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-jueves",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_jueves.svg"
+          },
+          {
+            "id": "Initial-jueves",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "J",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-miercoles",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_miercoles.svg"
+          },
+          {
+            "id": "Initial-miercoles",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778488159179688
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "V",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-martes",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_martes.svg"
+          },
+          {
+            "id": "Initial-martes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778564453125
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "S",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-lunes",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_lunes.svg"
+          },
+          {
+            "id": "Initial-lunes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778488159179688
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "D",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "icon-alarma2",
+            "margin": {
+              "left": 3.65625,
+              "top": 3.75,
+              "right": 3.65625,
+              "bottom": 3.75
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon_alarma2.svg"
+          },
+          {
+            "id": "ecendido-alarma2",
+            "is-structured": false,
+            "children": [
+              "Target-alarma2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Target-alarma2",
+            "padding": 4.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": 12.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "State-layer-alarma2"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "State-layer-alarma2",
+            "padding": 8.0,
+            "border-radius": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Handle shape-alarma2"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "Handle shape-alarma2",
+            "padding": 11.0,
+            "border-radius": 24.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "children": [
+              "Container-alarma2"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Container-alarma2",
+            "border-radius": 23.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              }
+            }
+          },
+          {
+            "id": "Frame 1-alarma1-dashboard",
+            "is-structured": false,
+            "children": [
+              "Detalle Alarma-alarma1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Nombre-alarma1",
+            "margin": {
+              "left": 7.0,
+              "top": 16.9560546875,
+              "right": 278.59510803222656,
+              "bottom": 38.0
+            },
+            "is-structured": false,
+            "children": [
+              "Monogram-alarma1-dashboard"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Dias-alarma1",
+            "margin": {
+              "left": 44.0,
+              "top": 59.0,
+              "right": 45.0,
+              "bottom": 4.0
+            },
+            "is-structured": false,
+            "children": [
+              "Monogram-domingo-dashboard",
+              "Monogram-sabado-dashboard",
+              "Monogram-viernes-dashboard",
+              "Monogram-jueves-dashboard",
+              "Monogram-miercoles-dashboard",
+              "Monogram-martes-dashboard",
+              "Monogram-lunes-dashboard"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "settings-alarma1",
+            "margin": {
+              "left": 264.0,
+              "top": 2.0,
+              "right": 11.0,
+              "bottom": 43.0
+            },
+            "is-structured": false,
+            "children": [
+              "icon-alarma1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Switch-alarma1",
+            "padding": {
+              "left": 4.0,
+              "top": 2.0,
+              "right": 4.0,
+              "bottom": 2.0
+            },
+            "margin": {
+              "left": 186.0,
+              "top": 6.0,
+              "right": 82.0,
+              "bottom": 52.0
+            },
+            "border-radius": 100.0,
+            "arrangement": "row",
+            "main-axis-align": "end",
+            "children": [
+              "ecendido-alarma1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            },
+            "clip-content": false
+          },
+          {
+            "id": "hora-alarma1",
+            "margin": {
+              "left": 55.0,
+              "top": 11.739013671875,
+              "right": 216.0,
+              "bottom": 62.60881233215332
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 500.0,
+            "text-content": "7:00 A.M.",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Detalle Alarma-alarma1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 90.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "Rectangle 4-alarma1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Rectangle 4-alarma1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "rectangle_4_alarma1.svg"
+          },
+          {
+            "id": "Monogram-alarma1-dashboard",
+            "is-structured": false,
+            "children": [
+              "Background-alarma1",
+              "Initial-alarma1"
+            ],
+            "background-color": {
+              "alpha": 0.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Background-alarma1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_alarma1.svg"
+          },
+          {
+            "id": "Initial-alarma1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.6804733276367188
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 34.40489196777344
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 34.40489196777344
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "A",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 13.761957168579102,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.5000001525878905
+          },
+          {
+            "id": "Monogram-domingo-dashboard",
+            "margin": {
+              "right": 204.64429664611816
+            },
+            "is-structured": false,
+            "children": [
+              "Background-domingo-dashboard",
+              "Initial-domingo-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-sabado-dashboard",
+            "margin": {
+              "left": 34.107383728027344,
+              "right": 170.5369110107422
+            },
+            "is-structured": false,
+            "children": [
+              "Background-sabado-dashboard",
+              "Initial-sabado-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-viernes-dashboard",
+            "margin": {
+              "left": 68.21476745605469,
+              "right": 136.42952728271484
+            },
+            "is-structured": false,
+            "children": [
+              "Background-viernes-dashboard",
+              "Initial-viernes-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-jueves-dashboard",
+            "margin": {
+              "left": 102.3221435546875,
+              "right": 102.32215118408203
+            },
+            "is-structured": false,
+            "children": [
+              "Background-jueves-dashboard",
+              "Initial-jueves-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-miercoles-dashboard",
+            "margin": {
+              "left": 136.42953491210938,
+              "right": 68.21476745605469
+            },
+            "is-structured": false,
+            "children": [
+              "Background-miercoles-dashboard",
+              "Initial-miercoles-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-martes-dashboard",
+            "margin": {
+              "left": 170.5369110107422,
+              "right": 34.10737609863281
+            },
+            "is-structured": false,
+            "children": [
+              "Background-martes-dashboard",
+              "Initial-martes-dashboard"
+            ]
+          },
+          {
+            "id": "Monogram-lunes-dashboard",
+            "margin": {
+              "left": 204.644287109375,
+              "right": 0.0000152587890625
+            },
+            "is-structured": false,
+            "children": [
+              "Background-lunes-dashboard",
+              "Initial-lunes-dashboard"
+            ]
+          },
+          {
+            "id": "Background-domingo-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_domingo_dashboard.svg"
+          },
+          {
+            "id": "Initial-domingo-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.677851676940918
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "L",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-sabado-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_sabado_dashboard.svg"
+          },
+          {
+            "id": "Initial-sabado-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "M",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-viernes-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_viernes_dashboard.svg"
+          },
+          {
+            "id": "Initial-viernes-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "M",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-jueves-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_jueves_dashboard.svg"
+          },
+          {
+            "id": "Initial-jueves-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778526306152344
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "J",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-miercoles-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_miercoles_dashboard.svg"
+          },
+          {
+            "id": "Initial-miercoles-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778488159179688
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "V",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-martes-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_martes_dashboard.svg"
+          },
+          {
+            "id": "Initial-martes-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778564453125
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "S",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "Background-lunes-dashboard",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "background_lunes_dashboard.svg"
+          },
+          {
+            "id": "Initial-lunes-dashboard",
+            "alignment": {
+              "horizontal": {
+                "attachment": "center",
+                "offset": -0.6778488159179688
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -0.5
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 7.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 18.0
+              }
+            },
+            "font-weight": 500.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "D",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align-vertical": "center",
+            "text-size": 11.0,
+            "letter-spacing": 0.12901835143566132,
+            "line-height": 1.0909091186523439
+          },
+          {
+            "id": "icon-alarma1",
+            "margin": {
+              "left": 3.65625,
+              "top": 3.75,
+              "right": 3.65625,
+              "bottom": 3.75
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon_alarma1.svg"
+          },
+          {
+            "id": "ecendido-alarma1",
+            "is-structured": false,
+            "children": [
+              "Target-alarma1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "Target-alarma1",
+            "padding": 4.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "end",
+                "offset": 12.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "State-layer-alarma1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "State-layer-alarma1",
+            "padding": 8.0,
+            "border-radius": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "Handle shape-alarma1"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "Handle shape-alarma1",
+            "padding": 11.0,
+            "border-radius": 24.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-alignment": "center",
+            "arrangement": "row",
+            "children": [
+              "Container-alarma1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Container-alarma1",
+            "border-radius": 23.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "ambients": {
+    "md.sys.typescale.label-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.label-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Dashboard",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      },
+      "ambients": {
+        "md.sys.typescale.label-large.weight": 500.0,
+        "md.sys.typescale.label-large.size": 14.0,
+        "md.sys.typescale.label-large.tracking": 0.10000000149011612,
+        "md.sys.typescale.label-large.line-height": 1.4285714721679688
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
