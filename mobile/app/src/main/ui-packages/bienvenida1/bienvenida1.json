@@ -1,0 +1,566 @@
+{
+  "name": "bienvenida1",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "RoASMrNTObu1WqH5Qilieg",
+    "node": "88:1305",
+    "version": "6692187691",
+    "component-id": "c986602f7becfe6ab7e6bc89213ecc24b7d81230"
+  },
+  "default": "Bienvenida1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Volver-b1"
+      },
+      {
+        "type": "image",
+        "id": "lb1-b1"
+      },
+      {
+        "type": "group",
+        "id": "Button-b1"
+      },
+      {
+        "type": "group",
+        "id": "Building Blocks/Primary tabs/Label only"
+      },
+      {
+        "type": "text",
+        "id": "txt-b1"
+      },
+      {
+        "type": "group",
+        "id": "arrow_right-b1"
+      },
+      {
+        "type": "group",
+        "id": "arrow_left-b1"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-b1"
+      },
+      {
+        "type": "text",
+        "id": "label-text-b1"
+      },
+      {
+        "type": "group",
+        "id": "Title-b1"
+      },
+      {
+        "type": "group",
+        "id": "Tab Contents-b1"
+      },
+      {
+        "type": "text",
+        "id": "Label-b1"
+      },
+      {
+        "type": "group",
+        "id": "Badges-b1"
+      },
+      {
+        "type": "group",
+        "id": "Spacer-b1"
+      },
+      {
+        "type": "vector",
+        "id": "icon-b1"
+      },
+      {
+        "type": "vector",
+        "id": "icon1-b1"
+      }
+    ],
+    "modes": {
+      "Bienvenida1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Volver-b1",
+              "lb1-b1",
+              "Button-b1",
+              "Building Blocks/Primary tabs/Label only",
+              "txt-b1",
+              "arrow_right-b1",
+              "arrow_left-b1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Volver-b1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 44.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 800.0
+              }
+            },
+            "is-structured": false,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "lb1-b1",
+            "margin": {
+              "left": 20.0,
+              "right": 180.0
+            },
+            "border-radius": 15.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -175.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 150.0
+              }
+            },
+            "image-content": "lb1_b1.jpeg",
+            "scale": "cover"
+          },
+          {
+            "id": "Button-b1",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 740.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-alignment": "center",
+            "children": [
+              "state-layer-b1"
+            ],
+            "item-spacing": 8.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            }
+          },
+          {
+            "id": "Building Blocks/Primary tabs/Label only",
+            "border-radius": 15.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 190.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 150.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 150.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 150.0
+              }
+            },
+            "main-axis-align": "end",
+            "children": [
+              "Title-b1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 292.5,
+              "saturation": 0.03137254901960784,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "txt-b1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 320.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 160.0
+              }
+            },
+            "font-weight": "^md.sys.typescale.body-medium.weight",
+            "text-content": "Utiliza calendarios personalizados que pueden configurar días exentos o para los que no aplica tu alarma, desde desactivar algunas horas, algunos días o inclusive meses. Puedes utilizar calendarios predeterminados como “Festivos de tu país” o puedes crear tus propios calendarios en la aplicación web.",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-align": "left",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.body-medium.size",
+            "letter-spacing": "^md.sys.typescale.body-medium.tracking",
+            "line-height": "^md.sys.typescale.body-medium.line-height",
+            "typeface": "^md.sys.typescale.body-medium.font"
+          },
+          {
+            "id": "arrow_right-b1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 265.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 480.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 85.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 82.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "icon-b1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "arrow_left-b1",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 480.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 85.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 82.0
+              }
+            },
+            "is-structured": false,
+            "children": [
+              "icon1-b1"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "state-layer-b1",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-b1"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-b1",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Continuar",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          },
+          {
+            "id": "Title-b1",
+            "padding": {
+              "left": 16.0,
+              "right": 16.0
+            },
+            "main-axis-align": "end",
+            "children": [
+              "Tab Contents-b1"
+            ]
+          },
+          {
+            "id": "Tab Contents-b1",
+            "padding": {
+              "top": 14.0,
+              "bottom": 14.0
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "Label-b1",
+              "Badges-b1"
+            ],
+            "item-spacing": 4.0
+          },
+          {
+            "id": "Label-b1",
+            "font-weight": "^md.sys.typescale.headline-medium.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 263.99999999999994,
+              "saturation": 0.12658227848101275,
+              "value": 0.30980392156862746
+            },
+            "text-content": "Controla \ntu Tiempo",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.headline-medium.size",
+            "letter-spacing": "^md.sys.typescale.headline-medium.tracking",
+            "line-height": "^md.sys.typescale.headline-medium.line-height",
+            "typeface": "^md.sys.typescale.headline-medium.font"
+          },
+          {
+            "id": "Badges-b1",
+            "padding": 2.0,
+            "border-radius": 100.0,
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "stroke-alignment": "outside",
+            "arrangement": "row",
+            "children": [
+              "Spacer-b1"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 3.2214765100671143,
+              "saturation": 0.8324022346368715,
+              "value": 0.7019607843137254
+            },
+            "clip-content": false
+          },
+          {
+            "id": "Spacer-b1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 2.0
+              }
+            },
+            "is-structured": false
+          },
+          {
+            "id": "icon-b1",
+            "margin": {
+              "left": 35.416656494140625,
+              "top": 23.9166259765625,
+              "right": 31.875011444091797,
+              "bottom": 23.916709899902344
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon_b1.svg"
+          },
+          {
+            "id": "icon1-b1",
+            "margin": {
+              "left": 31.875,
+              "top": 23.9166259765625,
+              "right": 35.41666793823242,
+              "bottom": 23.916709899902344
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "icon1_b1.svg"
+          }
+        ]
+      }
+    }
+  },
+  "ambients": {
+    "md.sys.typescale.body-medium.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.body-medium.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-medium.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-medium.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.body-medium.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.label-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.headline-medium.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Bienvenida1",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      },
+      "ambients": {
+        "md.sys.typescale.body-medium.weight": 400.0,
+        "md.sys.typescale.body-medium.size": 14.0,
+        "md.sys.typescale.body-medium.tracking": 0.25,
+        "md.sys.typescale.body-medium.line-height": 1.4285714721679688,
+        "md.sys.typescale.label-large.weight": 500.0,
+        "md.sys.typescale.label-large.size": 14.0,
+        "md.sys.typescale.label-large.tracking": 0.10000000149011612,
+        "md.sys.typescale.label-large.line-height": 1.4285714721679688,
+        "md.sys.typescale.headline-medium.weight": 400.0,
+        "md.sys.typescale.headline-medium.size": 28.0,
+        "md.sys.typescale.headline-medium.line-height": 1.2857142639160157
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,363 @@
+{
+  "name": "login1",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "RoASMrNTObu1WqH5Qilieg",
+    "node": "88:1314",
+    "version": "6692187691",
+    "component-id": "9fe2593b2263f0d8db6e4570c8820c8660bdc2f1"
+  },
+  "default": "Login1",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "Volver-login1"
+      },
+      {
+        "type": "image",
+        "id": "image-1-login1"
+      },
+      {
+        "type": "group",
+        "id": "Button-anonimo-login1"
+      },
+      {
+        "type": "group",
+        "id": "Button-inicia-login1"
+      },
+      {
+        "type": "text",
+        "id": "Inicia sesión, o continua anónimo"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-anonimo-login1"
+      },
+      {
+        "type": "text",
+        "id": "label-text-anonimo-login1"
+      },
+      {
+        "type": "group",
+        "id": "state-layer-inicia-login1"
+      },
+      {
+        "type": "text",
+        "id": "label-text-inicia-login1"
+      }
+    ],
+    "modes": {
+      "Login1": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "Volver-login1",
+              "image-1-login1",
+              "Button-anonimo-login1",
+              "Button-inicia-login1",
+              "Inicia sesión, o continua anónimo"
+            ],
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "Volver-login1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 44.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 800.0
+              }
+            },
+            "is-structured": false,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            }
+          },
+          {
+            "id": "image-1-login1",
+            "margin": {
+              "left": 20.0,
+              "right": 20.0
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 0.0
+              },
+              "vertical": {
+                "attachment": "center",
+                "offset": -15.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 270.0
+              }
+            },
+            "image-content": "image_1_login1.png",
+            "scale": "cover"
+          },
+          {
+            "id": "Button-anonimo-login1",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 660.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-alignment": "center",
+            "children": [
+              "state-layer-anonimo-login1"
+            ],
+            "item-spacing": 8.0,
+            "background-color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            }
+          },
+          {
+            "id": "Button-inicia-login1",
+            "border-radius": 100.0,
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 740.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 320.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 40.0
+              }
+            },
+            "stroke-width": 1.0,
+            "stroke-color": {
+              "alpha": 1.0,
+              "hue": 269.99999999999994,
+              "saturation": 0.07936507936507942,
+              "value": 0.49411764705882355
+            },
+            "children": [
+              "state-layer-inicia-login1"
+            ],
+            "item-spacing": 8.0
+          },
+          {
+            "id": "Inicia sesión, o continua anónimo",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": 20.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 70.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": 318.0
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": 80.0
+              }
+            },
+            "font-weight": "^md.sys.typescale.display-small.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 0.16470588235294117
+            },
+            "text-content": "Inicia sesión, o continua anónimo",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": "^md.sys.typescale.display-small.size",
+            "letter-spacing": "^md.sys.typescale.display-small.tracking",
+            "line-height": "^md.sys.typescale.display-small.line-height",
+            "typeface": "^md.sys.typescale.display-small.font"
+          },
+          {
+            "id": "state-layer-anonimo-login1",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-anonimo-login1"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-anonimo-login1",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 0.0,
+              "saturation": 0.0,
+              "value": 1.0
+            },
+            "text-content": "Anónimo",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          },
+          {
+            "id": "state-layer-inicia-login1",
+            "padding": {
+              "left": 24.0,
+              "top": 10.0,
+              "right": 24.0,
+              "bottom": 10.0
+            },
+            "arrangement": "row",
+            "children": [
+              "label-text-inicia-login1"
+            ],
+            "item-spacing": 8.0,
+            "clip-content": false
+          },
+          {
+            "id": "label-text-inicia-login1",
+            "font-weight": "^md.sys.typescale.label-large.weight",
+            "color": {
+              "alpha": 1.0,
+              "hue": 256.551724137931,
+              "saturation": 0.4055944055944056,
+              "value": 0.5607843137254902
+            },
+            "text-content": "Inicia sesión",
+            "overflow": "visible",
+            "text-align-vertical": "center",
+            "text-size": "^md.sys.typescale.label-large.size",
+            "letter-spacing": "^md.sys.typescale.label-large.tracking",
+            "line-height": "^md.sys.typescale.label-large.line-height",
+            "typeface": "^md.sys.typescale.label-large.font"
+          }
+        ]
+      }
+    }
+  },
+  "ambients": {
+    "md.sys.typescale.display-small.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.display-small.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.display-small.line-height": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.font": {
+      "data-type": "typeface",
+      "description": null
+    },
+    "md.sys.typescale.label-large.weight": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.size": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.tracking": {
+      "data-type": "double",
+      "description": null
+    },
+    "md.sys.typescale.label-large.line-height": {
+      "data-type": "double",
+      "description": null
+    }
+  },
+  "previews": [
+    {
+      "design": "Login1",
+      "size": {
+        "width": 360.0,
+        "height": 800.0
+      },
+      "ambients": {
+        "md.sys.typescale.display-small.weight": 400.0,
+        "md.sys.typescale.display-small.size": 36.0,
+        "md.sys.typescale.display-small.line-height": 1.222222213745117,
+        "md.sys.typescale.label-large.weight": 500.0,
+        "md.sys.typescale.label-large.size": 14.0,
+        "md.sys.typescale.label-large.tracking": 0.10000000149011612,
+        "md.sys.typescale.label-large.line-height": 1.4285714721679688
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
